@@ -1,0 +1,15 @@
+# Helix runtime files
+runtime/
+
+# Helix cache
+.cache/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp

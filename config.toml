@@ -1,0 +1,80 @@
+theme = "seoul256-dark-hard"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-completion = true
+auto-format = true
+auto-save = false
+idle-timeout = 400
+completion-trigger-len = 2
+auto-info = true
+true-color = true
+rulers = [80, 120]
+bufferline = "always"
+color-modes = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = ["file-type"]
+right = ["diagnostics", "selections", "position"]
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+render = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+C-s = ":w"
+C-q = ":q"
+C-a = "select_all"
+C-x = ["extend_to_line_bounds", "delete_selection"]
+C-p = "file_picker"
+C-f = "search"
+C-r = "rsearch"
+C-h = "hover"
+C-j = "jump_forward"
+C-k = "jump_backward"
+C-u = "half_page_up"
+C-e = "half_page_down"
+space.w = ":w"
+space.q = ":q"
+space.x = ":wq"
+space.f = "file_picker"
+space.b = "buffer_picker"
+space.s = "symbol_picker"
+space.g = "goto_definition"
+space.r = "rename_symbol"
+space.c = "toggle_comments"
+space.d = "diagnostics_picker"
+space.a = "code_action"
+";" = "repeat_last_motion"
+
+[keys.insert]
+C-s = ":w"
+C-space = "completion"
+C-n = "completion"
+C-p = "signature_help"
+
+[keys.select]
+C-c = ["normal_mode", "collapse_selection"]
