@@ -4,6 +4,12 @@ My personal Helix editor configuration with seoul256-dark-hard theme and custom 
 
 ## Quick Setup
 
+## Destructive One-liner Setup
+
+```bash
+rm -rf ~/.config/helix && git clone https://github.com/justingosan/helix-config.git ~/.config/helix
+```
+
 Clone and overwrite existing config:
 
 ```bash
@@ -11,7 +17,7 @@ Clone and overwrite existing config:
 mv ~/.config/helix ~/.config/helix.backup
 
 # Clone this repo
-git clone https://github.com/YOUR_USERNAME/helix-config.git ~/.config/helix
+git clone https://github.com/justingosan/helix-config.git ~/.config/helix
 ```
 
 Or if you already have a helix config and want to overwrite:
@@ -21,13 +27,7 @@ Or if you already have a helix config and want to overwrite:
 rm -rf ~/.config/helix
 
 # Clone this repo
-git clone https://github.com/YOUR_USERNAME/helix-config.git ~/.config/helix
-```
-
-## One-liner Setup
-
-```bash
-rm -rf ~/.config/helix && git clone https://github.com/YOUR_USERNAME/helix-config.git ~/.config/helix
+git clone https://github.com/justingosan/helix-config.git ~/.config/helix
 ```
 
 ## Features
